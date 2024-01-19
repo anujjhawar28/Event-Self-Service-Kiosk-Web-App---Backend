@@ -1,0 +1,11 @@
+{
+  "development": {
+    "username": "jhawar",
+    "password": "demo",
+    "database": "self-service",
+    "dialect": "postgres",
+    "query": {
+      "raw": true
+    }
+  }
+}
