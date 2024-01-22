@@ -74,4 +74,18 @@ module.exports = {
       throw err;
     }
   },
+
+  getUserById: async (req) => {
+    try {
+      const isUserExist = await user.findOne({
+        where: {
+          uniqueId: req.params.uniqueId,
+        },
+      }); 
+      return isUserExist;
+    } catch (err) {
+      logger.error(err);
+      throw err;
+    }
+  },
 };

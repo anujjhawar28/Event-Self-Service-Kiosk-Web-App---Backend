@@ -77,5 +77,8 @@ module.exports = {
       image: Joi.string().optional(),
       badgeGenerated: Joi.boolean().optional(),
     }),
+    getUserById: Joi.object({
+      uniqueId: Joi.required(),
+    }),
   },
 };

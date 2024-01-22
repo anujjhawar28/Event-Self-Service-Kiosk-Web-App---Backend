@@ -75,4 +75,16 @@ module.exports = {
       }
     });
   },
+
+  getUserById: async (req) => {
+    try {
+      const { validateSchema } = require("../models/user");
+      if (validateRequest(validateSchema["getUserById"], req.params)) {
+        const response = await auth.getUserById(req);
+        return responseFormatter(HttpStatus.OK, response);
+      }
+    } catch (err) {
+      throw errorFormatter(err);
+    }
+  },
 };
