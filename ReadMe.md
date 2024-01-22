@@ -1,5 +1,11 @@
 # Server
 
+## Don't Forget to create /images folder in root folder in order to save images on server
+
+```
+/images
+```
+
 ## Project setup
 
 ```
@@ -33,7 +39,7 @@ http://localhost:<port>/api/<>
 ### Postman Collection
 
 ```
-https://www.getpostman.com/collections/59159050d2b1d5cc5033
+https://elements.getpostman.com/redirect?entityId=10445439-f402eb96-2840-4928-8a6c-23d7f158daa0&entityType=collection
 ```
 
 ### Sequelize Query Builder Link:
